@@ -1,7 +1,12 @@
 # Marlin 3D Printer Firmware For the Sainsmart Coreception 300 (With Bl touch)
 
+## Features
+All core features of the Coreception are present and working except the GUI is currently the default text based marlin.
+
+BL Touch is not configured as an endstop it is mainly used for bed mesh creation, this is due to Coreception having 2 seperate Z-Axis leadscrews that are both low pitch and that require seperate leveling (removing prints its quite possible to unlevel them). 
+
 ## Configuring BL Touch
-To configure your BL Touch will not replace any axis endstops, it will replace the secondary filament runout detection pin, this is due to Coreception having 2 seperate Z-Axis leadscrews that are both low pitch and that require seperate leveling. No endswitch is perfect which makes BL Touch the perfect addon aswell.
+To configure your BL Touch will not replace any axis endstops, it will replace the secondary filament runout detection pin,  No endswitch is perfectly accurate which makes BL Touch the perfect addon aswell.
 
 ![alt text](https://github.com/jgarder/Marlin-Coreception-300/blob/2.0.x/MKS_Robin_Nano-BLTouch.png?raw=true)
 
