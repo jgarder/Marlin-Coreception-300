@@ -1,5 +1,9 @@
 # Marlin 3D Printer Firmware For the Sainsmart Coreception 300 (With Bl touch)
 
+##Configuring BL Touch
+To configure your BL Touch will not replace any axis endstops, it will replace the secondary filament runout detection pin, this is due to Coreception having 2 seperate Z-Axis leadscrews that are both low pitch and that require seperate leveling. No endswitch is perfect which makes BL Touch the perfect addon aswell.
+
+![alt text](https://github.com/jgarder/Marlin-Coreception-300/blob/2.0.x/MKS_Robin_Nano-BLTouch.png?raw=true)
 
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
