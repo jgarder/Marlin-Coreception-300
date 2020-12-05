@@ -22,7 +22,7 @@ To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino
   - [Installing Marlin (VSCode)](http://marlinfw.org/docs/basics/install_platformio_vscode.html).
 
 ### Supported Platforms
-This is designed for a Stock 2019-2020 Coreception 300 with the MKS Robin nano V1.2
+This is designed for a Stock 2019-2020 Coreception 300 with the MKS Robin nano V1.2. But this is almost completly stock marlin at its core and is compatible with any board marlin is. 
 
 
 ## Submitting Changes
