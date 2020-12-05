@@ -1,5 +1,14 @@
 # Marlin 3D Printer Firmware For the Sainsmart Coreception 300 (With Bl touch)
 
+## Features
+All core features of the Coreception are present and working except the GUI is currently the default text based marlin.
+
+BL Touch is not configured as an endstop it is mainly used for bed mesh creation, this is due to Coreception having 2 seperate Z-Axis leadscrews that are both low pitch and that require seperate leveling (removing prints its quite possible to unlevel them). 
+
+## Configuring BL Touch
+To configure your BL Touch will not replace any axis endstops, it will replace the secondary filament runout detection pin,  No endswitch is perfectly accurate which makes BL Touch the perfect addon aswell.
+
+![alt text](https://github.com/jgarder/Marlin-Coreception-300/blob/2.0.x/MKS_Robin_Nano-BLTouch.png?raw=true)
 
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
@@ -18,7 +27,7 @@ To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino
   - [Installing Marlin (VSCode)](http://marlinfw.org/docs/basics/install_platformio_vscode.html).
 
 ### Supported Platforms
-This is designed for a Stock 2019-2020 Coreception 300 with the MKS Robin nano V1.2
+This is designed for a Stock 2019-2020 Coreception 300 with the MKS Robin nano V1.2. But this is almost completly stock marlin at its core and is compatible with any board marlin is. 
 
 
 ## Submitting Changes
