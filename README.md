@@ -13,6 +13,11 @@ To configure your BL Touch will not replace any axis endstops, it will replace t
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
 
+## Disabling BL Touch
+Comment Line 902 of Configuration.h "#define BLTOUCH" by making it -> "//#define BLTOUCH".  
+Then compile and upload to your board. (note: your second filament pin will be avaialble for use again)
+
+
 ## Marlin 2.0
 
 Marlin 2.0 takes this popular RepRap firmware to the next level by adding support for much faster 32-bit and ARM-based boards while improving support for 8-bit AVR boards. Read about Marlin's decision to use a "Hardware Abstraction Layer" below.
