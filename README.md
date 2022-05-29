@@ -22,7 +22,7 @@ Then compile and upload to your board. (note: your second filament pin will be a
 1.0 Place binfile into SD card
 2 Turn off machine Put in SD card, turn on machine
 3. If you it ask about Eeprom,  Intialize.
-4 If it says "top left" press top left bottom left top right bottom right to calibrate screen, it should then say "calibration complete" and freeze for 10 seconds. 
+4. If it says "top left" press top left bottom left top right bottom right to calibrate screen, it should then say "calibration complete" and freeze for 10 seconds. 
 5. CALIBRATION NEEDED - NEW FIRMWARE
 6. GO TO  Main-> configuration->Advanced settings-> tempurature - >
 7. PID autotune E1 a(at print temp 200)+ PIN autotune Bed (70) - Run both commands 
