@@ -17,19 +17,29 @@ Please test this firmware and let us know if it misbehaves in any way. Volunteer
 Comment Line 902 of Configuration.h "#define BLTOUCH" by making it -> "//#define BLTOUCH".  
 Then compile and upload to your board. (note: your second filament pin will be avaialble for use again)
 
-## FirstTime Setup Instructions :
+## Loose Idea to compile : 
+1. download VScode
+2. Download the platformIO extension from the extensions tab in vscode
+3. download this git (or clone any marlin) and place it on your drive somewhere. 
+4. open the folder in vs code  (use "open folder")
+5. setup the platformio.ini to have a default environment matching your CPU and its pinouts on your board. wait for intellisense building to finish. for the coreception we use "default_envs = mks_robin_nano35"
+6. Hit platformIO:Build in the bottom status bar, or goto platoform io quick access and hit build. (you will need internet to auto download libraries)
+7. goto the folder you placed on your drive and goto .pio->build->mks_robin_nano35 where you will see you ROBIN NANO BIN file.
+8. take this Binfile and place it on any microsd card... and..... follow the proceeding instructions. 
 
-1.0 Place binfile into SD card
+
+## QuickStart guide for New Firmware with Coreception (or any marlin printer)
+1 Place binfile into SD card
 2 Turn off machine Put in SD card, turn on machine
 3. If you it ask about Eeprom,  Intialize.
 4. If it says "top left" Touch top left, bottom left, top right ,bottom right to calibrate screen, it should then say "calibration complete" and freeze for 10 seconds. 
 5. CALIBRATION NEEDED - NEW FIRMWARE
 6. GO TO  Main-> configuration->Advanced settings-> tempurature - >
-7. PID autotune E1 a(at print temp 200)+ PIN autotune Bed (70) - Run both commands 
+7. PID autotune E1 a(at print temp most often used)+ PIN autotune Bed (at temp most often used) - Run both commands 
 8. A  GO TO Main-> configuration->Advanced settings->probe offset->Z Probe Wizard - Run that
 8. B Lower Z by 1 mm until  Nozzle to bed is close... 
 8. C lower z by .025 or smaller while sliding a piece of paper under a clean nozzle UNTIL slight friction can be felt.
-9.  Go TO main->configuration - Store settings
+9.  Go TO main->configuration -> Store settings
 10. Start a print test calibration cube.
 11. Watch while print starts if first layer isn't perfect, click the XYZ position bar (on Color Touchscreens) to enter babystepping mode which will change your initial Probe Z offset (takes 10 presses to change .01 to .02), proceed to Change Z height to fit your material.(If you do change the settings, repeat step 9)
 
