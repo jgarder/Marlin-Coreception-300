@@ -22,7 +22,7 @@ Then compile and upload to your board. (note: your second filament pin will be a
 1.0 Place binfile into SD card
 2 Turn off machine Put in SD card, turn on machine
 3. If you it ask about Eeprom,  Intialize.
-4. If it says "top left" press top left bottom left top right bottom right to calibrate screen, it should then say "calibration complete" and freeze for 10 seconds. 
+4. If it says "top left" Touch top left, bottom left, top right ,bottom right to calibrate screen, it should then say "calibration complete" and freeze for 10 seconds. 
 5. CALIBRATION NEEDED - NEW FIRMWARE
 6. GO TO  Main-> configuration->Advanced settings-> tempurature - >
 7. PID autotune E1 a(at print temp 200)+ PIN autotune Bed (70) - Run both commands 
@@ -30,8 +30,8 @@ Then compile and upload to your board. (note: your second filament pin will be a
 8. B Lower Z by 1 mm until  Nozzle to bed is close... 
 8. C lower z by .025 or smaller while sliding a piece of paper under a clean nozzle UNTIL slight friction can be felt.
 9.  Go TO main->configuration - Store settings
-10. print test calibration cube.
-11. Watch while print starts if first layer isn't perfect, double-click and enter babystepping mode - Change Z height accordingly (If you do change the settings, repeat step 8)
+10. Start a print test calibration cube.
+11. Watch while print starts if first layer isn't perfect, click the XYZ position bar (on Color Touchscreens) to enter babystepping mode which will change your initial Probe Z offset (takes 10 presses to change .01 to .02), proceed to Change Z height to fit your material.(If you do change the settings, repeat step 9)
 
 
 <----------------NORMAL MARLIN BELOW------------------------------------------->
