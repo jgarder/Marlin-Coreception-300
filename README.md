@@ -1,5 +1,8 @@
 # Sainsmart Coreception 300 (With Bl touch)
 
+## Update! READ
+ this firmware will expect that you have G34(Z Axis alignment) and G29(Bed Mesh Creation) in your start print G-code! This will ensure that each side of yourgantry is lined up before each print and theres a nice fresh bed mesh.
+
 ## Supported Platforms
 This is designed for a Stock 2019-2020 Coreception 300 with the MKS Robin nano V1.2. But this is almost completly stock marlin at its core and is compatible with any board marlin is. so if you change your coreception motherboard just change your compile environment and go. 
 
@@ -9,7 +12,8 @@ All core features of the Coreception are present and working except the GUI is c
 BL Touch is not configured as an endstop it is mainly used for bed mesh creation, this is due to Coreception having 2 seperate Z-Axis leadscrews that are both low pitch and that require seperate leveling (removing prints its normal to unlevel the Zscrews). 
 
 ## Configuring BL Touch
-To configure your BL Touch will not replace any axis endstops, it will replace the secondary filament runout detection pin,  No endswitch is perfectly accurate which makes BL Touch the perfect addon aswell.
+inside marlin configuration.h you will find the line that sets your bl-touch to use the filament runout 2 pins. make sure that the code is uncommented and says "#define Z_MIN_PROBE_PIN FIL_RUNOUT2_PIN". without this it will attempt to use either the zmin/zmax or another endstop automatically. 
+To configure your BL Touch will not replace any axis endstops, it will replace the secondary filament runout detection pin which are not used on stop coreception/elf pro.
 
 ![alt text](https://github.com/jgarder/Marlin-Coreception-300/blob/2.0.x/MKS_Robin_Nano-BLTouch.png?raw=true)
 
